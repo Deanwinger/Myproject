@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    欢迎, {{username}}
+    <form action="{{ url_for('.pk') }}">
+        {{ form.csrf_token }}
+        {{ form.pk1() }}
+        {{ form.pk2() }}
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

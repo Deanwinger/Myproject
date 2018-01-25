@@ -9,7 +9,7 @@
 </head>
 <body>
     欢迎, {{username}}
-    <form action="{{ url_for('.pk') }}">
+    <form action="{{ url_for('.pk') }}" method="POST">
         {{ form.csrf_token }}
         {{ form.pk1() }}
         {{ form.pk2() }}

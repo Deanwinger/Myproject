@@ -1,10 +1,10 @@
-from flask import Flask
-from app.main import main as main_blueprint
+from app import create_app
+
+app = create_app('dev')
 
 
-app = Flask(__name__)
-app.register_blueprint(main_blueprint)
-app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+
+
 
 
 if __name__ == '__main__':

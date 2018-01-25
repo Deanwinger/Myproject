@@ -15,11 +15,11 @@ class DevelopmentConfig(Config):
     MONGO_PORT = 27017
     MONGO_DBNAME = 'pkyx'
 
-    @staticmethod
-    def init_app(app):
-        from flask_pymongo import PyMongo
-        app = PyMongo(app)
-        return app
+    # @staticmethod
+    # def init_app(app):
+    #     from flask_pymongo import PyMongo
+    #     app = PyMongo(app)
+    #     return app
 
 class TestingConfig(Config):
     TESTING = True
